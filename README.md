@@ -1,2 +1,3 @@
 # atcoder
-AtCoder solutions and library notes
+このリポジトリには自作ライブラリとatcoderでの提出コードの一部を掲載しています。
+
