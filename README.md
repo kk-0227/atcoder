@@ -5,6 +5,7 @@ AtCoder の解答コードと、自作ライブラリの一部です。言語は
 - AtCoder: [encry](https://atcoder.jp/users/encry)(緑 / highest 1138)
 - 旧アカウント: [kaitani0227](https://atcoder.jp/users/kaitani0227)
 - 2アカウント合計で約1000問を解いています
+
 ## 解説記事(Qiita)
 
 コンテストの問題を、図つきで解説した記事を Qiita に書いています。
@@ -12,14 +13,6 @@ AtCoder の解答コードと、自作ライブラリの一部です。言語は
 
 - [【C++】ABC409参加記(A〜F)](https://qiita.com/kai_22/items/f55faa2072bdf57fc1cb)(旧アカウント kaitani0227 での参加)
 
-## 構成
-
-- `lib/`: 自作ライブラリ(データ構造・グラフ・数学)
-- `solutions/`: 解答コード
-
-## ライブラリ
-
-(以下は今のままです)
 ## 構成
 
 - `lib/`: 自作ライブラリ(データ構造・グラフ・数学)
