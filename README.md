@@ -25,6 +25,6 @@ AtCoder の解答コードと、自作ライブラリの一部です。言語は
 
 ## 解いた問題の例
 
-| 問題 | アルゴリズム | 計算量 | コード |
+| 問題 | アルゴリズム | 計算量 | コード | 考え方 |
 |---|---|---|---|
-| [ABC367 E](https://atcoder.jp/contests/abc367/tasks/abc367_e) | ダブリング | O(N log K) | [abc367_e.cpp](solutions/abc367_e.cpp) |
+| [ABC367 E](https://atcoder.jp/contests/abc367/tasks/abc367_e) | ダブリング | O(N log K) | [コード](solutions/abc367_e.cpp) / [考え方](solutions/abc367_e.md) |
