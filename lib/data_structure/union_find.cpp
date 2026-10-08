@@ -9,7 +9,7 @@ using namespace std;
 // uf.root(x); // xの根を返す
 // uf.unite(x,y); // xとyがそれぞれ含まれている二つの木の併合
 // uf.same(x,y); // xとyが同じ木ならtrue,違うならfalseを返す
-// uf.get_edge.count(x); // xを含む木の辺の数を返す
+// uf.get_edge_count(x); // xを含む木の辺の数を返す
 // uf.get_size(x); // xを含む木の要素数を返す
 struct UnionFind{
 	vector<int> par, rank, size, edge_count;
