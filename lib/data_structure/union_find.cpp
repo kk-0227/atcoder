@@ -4,7 +4,13 @@ using namespace std;
 
 // Union-Find (経路圧縮 + ランクによる併合)
 // 計算量: ならし O(α(N))
-
+// 使い方:
+// UnionFind uf(N);
+// uf.root(x); // xの根を返す
+// uf.unite(x,y); // xとyがそれぞれ含まれている二つの木の併合
+// uf.same(x,y); // xとyが同じ木ならtrue,違うならfalseを返す
+// uf.get_edge.count(x); // xを含む木の辺の数を返す
+// uf.get_size(x); // xを含む木の要素数を返す
 struct UnionFind{
 	vector<int> par, rank, size, edge_count;
 	// par[i] : iの親
@@ -15,12 +21,12 @@ struct UnionFind{
 		for(int i = 0; i < N; i++)par[i] = i;
 	}
 	
-	int root(int x){ // xの根を返す
+	int root(int x){ 
 		if(par[x] == x)return x;
 		return par[x] = root(par[x]); // 経路圧縮
 	}
 	
-	bool unite(int x, int y){ // xとyがそれぞれ含まれている二つの木の併合
+	bool unite(int x, int y){ 
 		int rx = root(x); // それぞれの根を見つける
 		int ry = root(y);
 		if(rx == ry){// 根が同じ(元から同じ木に属している)ならそのまま
@@ -35,13 +41,15 @@ struct UnionFind{
 		return true;
 	}
 	
-	bool same(int x, int y){ // xとyが同じ木ならtrue,違うならfalseを返す
+	bool same(int x, int y){ 
 		return root(x) == root(y);
 	}
-	int get_edge_count(int x) { // xを含む木の辺の数を返す
+
+	int get_edge_count(int x) {
 		return edge_count[root(x)];
 	}
-  int get_size(int x) { // xを含む木の要素数を返す
-		return size[root(x)];
+
+	int get_size(int x) {
+  		return size[root(x)];
 	}
 };
