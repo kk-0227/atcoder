@@ -1,5 +1,10 @@
+#include <vector>
+#include <utility>
+using namespace std;
+
 // Union-Find (経路圧縮 + ランクによる併合)
 // 計算量: ならし O(α(N))
+
 struct UnionFind{
 	vector<int> par, rank, size, edge_count;
 	// par[i] : iの親
