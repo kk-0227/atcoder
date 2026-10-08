@@ -13,15 +13,17 @@ AtCoder の解答コードと、自作ライブラリの一部です。言語は
 
 ## ライブラリ
 
-各ファイルの先頭に、前提・計算量・使い方をコメントで書いています。
+各ファイルの先頭に、計算量と、必要に応じて前提・使い方をコメントで書いています。
+コンテスト用のテンプレートに貼り付けて使う前提のため、`#include` を省いているファイルがあります。
+`combination.cpp` は、AtCoder Library の `modint998244353` を `mint` として使います。
 
-| 名前 | ファイル | 計算量 | 備考 |
+| 名前 | アルゴリズム | 計算量 | ファイル |
 |---|---|---|---|
-| Union-Find | [union_find.cpp](lib/data_structure/union_find.cpp) | ならし O(α(N)) | 経路圧縮とランク併合。連結成分ごとの要素数・辺数も管理 |
-| ダイクストラ法 | [dijkstra.cpp](lib/graph/dijkstra.cpp) | O((V+E) log V) | 辺の重みは0以上 |
-| ダブリング | [doubling.cpp](lib/graph/doubling.cpp) | 前処理 O(N log K)、クエリ O(log K) | k回進んだ先を求める |
-| 二項係数(mod) | [combination.cpp](lib/math/combination.cpp) | 前処理 O(N)、クエリ O(1) | modは素数。階乗と逆階乗を前計算 |
-| エラトステネスの篩 | [eratosthenes.cpp](lib/math/eratosthenes.cpp) | O(n log log n) | n以下の素数判定表 |
+| Union-Find | グループ分けと結合を高速で行う | ならし O(α(N)) | [union_find.cpp](lib/data_structure/union_find.cpp) |
+| ダイクストラ法 | グラフ上のある点から他の点までの最短経路を高速で計算する | O((V+E) log V) | [dijkstra.cpp](lib/graph/dijkstra.cpp) |
+| ダブリング | ある地点と移動先が与えられている時にk回移動した時の到達点を高速で計算する | 前処理 O(N log K)、クエリ O(log K) | [doubling.cpp](lib/graph/doubling.cpp) |
+| 二項係数(mod) | 階乗と、その逆元(逆階乗)を前計算することで二項係数(nCr) を高速で求める| 前処理 O(N)、クエリ O(1) | [combination.cpp](lib/math/combination.cpp) |
+| エラトステネスの篩 | n以下の素数を高速で列挙する | O(n log log n) | [eratosthenes.cpp](lib/math/eratosthenes.cpp) |
 
 ## 解いた問題の例
 
