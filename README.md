@@ -37,3 +37,4 @@ AtCoder の解答コードと、自作ライブラリの一部です。言語は
 | 問題 | アルゴリズム | 計算量 | コード / 考え方 |
 |---|---|---|---|
 | [ABC367 E](https://atcoder.jp/contests/abc367/tasks/abc367_e) | ダブリング | O(N log K) | [コード](solutions/abc367_e.cpp) / [考え方](solutions/abc367_e.md) |
+| [AWC0175 D](https://atcoder.jp/contests/awc0175/tasks/awc0175_d) | 二分探索 | O(N log S) | [コード](solutions/awc0175_d.cpp) / [考え方](solutions/awc0175_d.md) |
