@@ -1,4 +1,4 @@
-# atcoder
+# AtCoder
 
 AtCoder の解答コードと、自作ライブラリの一部です。言語は C++ です。
 
