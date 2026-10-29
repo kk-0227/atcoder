@@ -2,7 +2,7 @@
 
 AtCoder の解答コードと、自作ライブラリの一部です。言語は C++ です。
 
-- AtCoder: [encry](https://atcoder.jp/users/encry)(緑 / highest 1138)
+- AtCoder: [encry](https://atcoder.jp/users/encry)(緑 / highest 1150)
 - 旧アカウント: [kaitani0227](https://atcoder.jp/users/kaitani0227)
 - 2アカウント合計で約1000問を解いています
   - [encry の AtCoder Problems](https://kenkoooo.com/atcoder/#/user/encry?userPageTab=All)
